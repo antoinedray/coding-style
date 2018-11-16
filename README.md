@@ -1,5 +1,5 @@
-# Coding Style EPITA
-A Clang-Format config to respect EPITA coding style
+# Sick and tired to get 200+ errors of coding style on your project ?
+A Clang-Format config to respect EPITA coding style.
 
 ## How to use it
 1. Install Clang Format 
