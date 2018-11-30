@@ -13,6 +13,21 @@ find . -iname *.h -o -iname *.c | xargs clang-format -i
 
 ## Other tools
 Clang-Format is not perfect and some errors might remain. To solve this started working on a moulinette to display remaining coding style errors. \
+
+### How to run the moulinette
+
+First install the moulinette
+```
+mkdir ~/.scripts
+cp <path-to-repo>/moulinette.py ~/.scripts
+```
+And then add the following line to your bash config (.bashrc of .bash_profile)
+```
+alias moulinette='python3 ~/.scripts/moulinette.py'
+```
+
+### How to solve remaining errors
+
 If the error is caused by a bad formatting of clang format such as:
 ```
 int arr[10] = {0};
