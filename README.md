@@ -2,7 +2,7 @@
 Here is a Clang-Format config to respect EPITA coding style (most of it).
 
 ## How to use it
-1. Install Clang Format 
+1. Install Clang Format
 2. Drop it to your home dir
 3. Install a plugin to link it in you favourite Ide (vim-clang-format | Sublime Clang Format)
 
@@ -10,6 +10,30 @@ Here is a Clang-Format config to respect EPITA coding style (most of it).
 ```
 find . -iname *.h -o -iname *.c | xargs clang-format -i
 ```
+
+## Other tools
+Clang-Format is not perfect and some errors might remain. To solve this started working on a moulinette to display remaining coding style errors. \
+If the error is caused by a bad formatting of clang format such as:
+```
+int arr[10] = {0};
+```
+Instead of:
+```
+int arr[10] =
+{
+    0
+};
+```
+Then, you have to disable clang-format on that specific portion of code as follow:
+```
+// clang-format off
+int arr[10] =
+{
+    0
+};
+// clang-format on
+```
+For other errors such as "More than 10 functions in file. (8.9)", you'll have to fix them on your own.
 
 ## How to collab
 If you find new useful commands don't hesitate to notify me or make a pull request. \
