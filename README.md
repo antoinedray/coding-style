@@ -12,7 +12,7 @@ find . -iname *.h -o -iname *.c | xargs clang-format -i
 ```
 
 ## Other tools
-Clang-Format is not perfect and some errors might remain. To solve this started working on a moulinette to display remaining coding style errors. \
+Clang-Format is not perfect and some errors might remain. To solve this started working on a moulinette to display remaining coding style errors.
 
 ### How to run the moulinette
 
