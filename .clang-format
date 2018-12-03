@@ -82,3 +82,9 @@ AllowShortFunctionsOnASingleLine: None
 
 # The function declaration return type breaking style to use.
 AlwaysBreakAfterReturnType: None
+
+# Align escaped newlines as far left as possible.
+EscapedNewlineAlignmentStyle: ENAS_Left
+
+# Prevent comment formatting
+CommentPragmas:  '^\* .*'
