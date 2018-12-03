@@ -15,7 +15,6 @@ find . -iname *.h -o -iname *.c | xargs clang-format -i
 Clang-Format is not perfect and some errors might remain. To solve this started working on a moulinette to display remaining coding style errors.
 
 ### How to run the moulinette
-
 First install the moulinette
 ```
 mkdir ~/.scripts
@@ -27,7 +26,6 @@ alias moulinette='python3 ~/.scripts/moulinette.py'
 ```
 
 ### How to solve remaining errors
-
 If the error is caused by a bad formatting of clang format such as:
 ```
 int arr[10] = {0};
@@ -51,7 +49,7 @@ int arr[10] =
 For other errors such as "More than 10 functions in file. (8.9)", you'll have to fix them on your own.
 
 ## How to collab
-If you find new useful commands don't hesitate to notify me or make a pull request. \
+If you find any error on the moulinette and/or want to upgrade it or if you find new useful clang-format commands don't hesitate to notify me or make a pull request. \
 When adding a new line of config, please add a comment to breifly explain what the line does. \
 Also add the coding style corresponding number to keep track of implemented features.
 
