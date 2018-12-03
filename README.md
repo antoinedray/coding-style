@@ -1,4 +1,4 @@
-# Tired to get 200+ errors of coding style on your project ?
+# Tired of getting 200+ errors of coding style on your project ?
 Here is a Clang-Format config to respect EPITA coding style (most of it).
 
 ## How to use it
